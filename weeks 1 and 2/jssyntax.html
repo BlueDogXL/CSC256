@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week 2 javascript syntax stuff</title>
+</head>
+<body>
+    <h1>CSC256 week 2 javascript syntax</h1>
+    <script>
+        // variables
+
+        let fName = "Alex"; // block scope (only accessible in the block of code it's declared in?)
+        var lName = "Caraway"; // function scope
+        mName = "Bradly"; // technically valid but obfuscates that this is where the variable is created (also unsure what scope this is).
+        // JS is loosely typed, data type is just kinda guessed? that^ isn't a problem in C# and the like because you have to specify data types there
+        var name_prefix; // also valid
+        // var names should start with letters or underscore and be camelCase or snake_case
+        // they should be descriptive (not just 'x' or something incoherent)  
+        var num = 42; // again JS is loosely typed so it just kinda guesses that this is a number. 
+        const CONSTANTNUMBER = 2; // constants don't change. use CAPITALS for them
+        var boolean = true; // bools are true/false. 1/0. yes/no.
+
+        // functions
+
+        // reusable "chunks" of code. basically use them so we don't have to type the same stuff over and over (and if we need to change it we don't need to go through every instance and change em one by one)
+        function addNumbers(num1, num2) // i guess also camelCase for function names???? because PascalCase is for classes i guess. 
+        {
+            // this takes the two values passed in when the function's called and returns their sum
+            return num1 + num2;
+        }
+        function getUsername()
+        {
+            var username = prompt("Please enter your username: ");
+            return username;
+        }
+        
+        var username = getUsername();
+        console.log(username); 
+        console.log(addNumbers(2,5)); // returns 7
+
+        // decision logic
+
+        if (username == "BlueDogXL")
+        {
+            console.log("eyyyyyy");
+        }
+        else if (username == "GreenDog3")
+        {
+            console.log("what");
+        }
+
+        // the === checks for "strict" equality: both value and data type must match
+        var num5 = 5;
+        var str5 = 5;
+        if (num5 === str5) // both data type and value match?
+        {
+            console.log("num5 and str5 are strictly equal");
+        }
+        else if (num5 == str5) // value match?
+        {
+            console.log("num5 and str5 are regular equal");
+        }
+        else // these things are not equal at all
+        { 
+            console.log("num5 and str5 are not equal.")
+        }
+
+        // loops
+
+        // 2 kinds of loops: for loops and while loops
+
+        // if we know how many times we want to loop, use a for
+        // if we don't, use a while. make sure it doesn't run infinitely forever
+
+        // three parts to a for loop, like C# and C++
+        // counter: var i = 0; (this count starts at 0)
+        // condition: i < 5; (while true, this loop will run)
+        // after those, increase the counter variable: i++
+        for (var i = 0; i < 5; i++)
+        {
+            console.log("i = " + i);
+        }
+        // for a while loop, we just have the condition
+        var j = 0;
+        while (j < 5)
+        {
+            console.log("j = " + j);
+            j++
+        }
+
+        // oh yeah do loops
+        var k = 0;
+        do
+        {
+            console.log("k = " + k);
+            k++
+        } while (k < 5);
+    </script>
+</body>
+</html>

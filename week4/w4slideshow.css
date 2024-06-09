@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+
+#imgPicture{
+    width: 400px;
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.centered{
+    text-align: center;
+}

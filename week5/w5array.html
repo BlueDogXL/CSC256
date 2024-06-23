@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5 Data Sorter</title>
+    <script src="w5array.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Favorite Movies</h1>
+    </header>
+    
+    <main>
+        <br>
+        <form id="formMovie" onsubmit="addMovie(event);">
+            <!-- explains what info we want -->
+            <label for="textMovie">enter movie title</label><br>
+            <!-- where they can put the info -->
+            <input type="text" id="textMovie" name="textMovie" placeholder="Movie Title" required><br>
+            <!-- button to submit info -->
+             <button type="submit">Add Movie</button><br>
+        </form>
+
+        <div id="divMovieList"></div><br>
+        <button onclick="clearList()">Clear List</button>
+    </main>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W6 Game Stats</title>
+    <script src="w6gaming.js"></script>
+    <link rel="stylesheet" href="w6gaming.css">
+</head>
+<body>
+    <header>
+        <h1>gaming</h1>
+    </header>
+    <main>
+        <form id="statsForm" onsubmit="updateStats()">
+            <label for="input1">input 1</label>
+            <input id="input1" name="input1" required><br>
+            <label for="input2">input 2</label>
+            <input id="input2" name="input2" required><br>
+            <label for="input3">input 3</label>
+            <input id="input3" name="input3" required><br>
+            <label for="input4">input 1</label>
+            <input id="input4" name="input4" required><br>
+            <button id="submit">Submit</button><br>
+        </form>
+        <div id="statsZone">
+            <h2>The Stuff</h2>
+            <textarea id="output" readonly></textarea>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+main
+{
+    display: flex; 
+}
+body
+{
+    background-color: pink;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.box
+{
+    width: 100px;
+    height: 200px;
+    border: 2px dashed palevioletred;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightpink
+}
+/* applies when two .box elements are next to each other */
+.box + .box
+{
+    margin-left: 20px;
+}
+
+/* change color when image is dragged over */
+.box.dragover
+{
+    background-color: rgb(241, 45, 153);
+}

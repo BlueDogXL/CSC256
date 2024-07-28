@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 11 Drag And Drop</title>
+    <link rel="stylesheet" href="w11dragndrop.css">
+    <script src="w11dragndrop.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Drag and Drop</h1>
+    </header>
+    <main>
+        <div class="box" id="box1">
+            <img src="image.PNG" id="imgDrag" draggable="true">
+        </div>
+        <div class="box" id="box2"></div>
+    </main>
+    <script>
+        var imgDrag = document.getElementById("imgDrag");
+        var box1 = document.getElementById("box1");
+        var box2 = document.getElementById("box2");
+        setUpEvents();
+    </script>
+</body>
+</html>
